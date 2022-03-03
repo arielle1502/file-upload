@@ -36,3 +36,47 @@
     transform: rotate(360deg);
   }
 }
+.form-check-label{
+  float: left;
+  padding-left: 1rem;
+}
+h2{
+  text-align: left;
+}
+
+img{
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+}
+
+.progessBar{
+  height: 1rem;
+  width: 0%;
+  background-color: #61dafb;
+  color: white;
+  padding:20px;
+  margin:1rem;
+}
+
+.file-upload{
+
+  box-shadow: 2px 2px 2px 2px #ccc;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.upbutton{
+   width: 5rem;
+   padding: .5rem;
+   background-color: #61dafb;
+   /* color: aliceblue; */
+   font-size: 1rem;
+   cursor: pointer;
+   border: none;
+   border-radius: 5px;
+}
