@@ -19,7 +19,7 @@ function FileUpload() {
     const uploadFile = () => {
         const formData = new FormData();
         formData.append('file', file); // appending file
-        axios.post(' https://api.houseofvinylfileconverter.net/upload', formData, {
+        axios.post('http://localhost:4500/upload', formData, {
             onUploadProgress: (ProgressEvent) => {
                 let progress = Math.round(
                 ProgressEvent.loaded / ProgressEvent.total * 100) + '%';
@@ -28,7 +28,7 @@ function FileUpload() {
         }).then(res => {
             console.log(res);
             getFile({ name: res.data.name,
-                     path: ' https://5nnzzfszz7.execute-api.ap-southeast-2.amazonaws.com/test' + res.data.path
+                     path: 'http://localhost:4500' + res.data.path
                    })
         }).catch(err => console.log(err))}
 
